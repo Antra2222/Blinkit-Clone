@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Stylesheet/childnav.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="/index.html">ClickIt</a></div>
+            <div class="sicon">
+                <input id="search" type="text" placeholder="What are you looking for?" oninput="search_grocery()" onkeydown="handleEnter(event)">
+                <img src="/search.png" alt="Search Icon">
+                <ul id="searchList" style="display: none;">
+                    <li class="dairyProduct"><a href="Dairy.html">Amul Gold Full Cream Milk</a></li>
+                    <li class="dairyProduct"><a href="Paan/Paan.html">Amul Tazza Toned Fresh Milk</a></li>
+                    <li class="dairyProduct"><a href="Dairy.html">Mother Dairy Cow Milk</a></li>
+                    <li class="dairyProduct"><a href="Dairy/MotherDairyCowMilk.html">Mother Dairy Toned Fresh Milk</a></li>
+                    <li class="dairyProduct"><a href="Dairy/MotherDairyCowMilk.html"></a>Amul Salted Butter</li>
+                    <li class="dairyProduct">Amul Pure Milk Cheese Slice</li>
+                    <li class="dairyProduct">Amul Cow Fresh Milk</li>
+                    <li class="dairyProduct">Amul Blend Diced Cheese</li>
+                    <li class="dairyProduct">Zero Maida Whole Wheat Bread</li>
+                    <li class="dairyProduct">Nature Fresh Egg</li>
+                    <li class="dairyProduct">Humpty Farm A2 Cow Fresh Milk</li>
+                    <li class="dairyProduct">Amul Curd</li>
+                    <li class="dairyProduct">Amul Masti Curd</li>
+                    <li class="dairyProduct"><a href="Dairy.html">Amul Milk</a></li>
+
+                </ul>
+            </div>
+            <div class="login">Login</div>
+            <button class="btn">
+                <img src="cart.png" alt="cart">
+            </button>
+        </div>
+            <ul class="category">
+                <li><a href="">Vegetable & Fruits</a></li>
+                <li><a href="/Dairy.html">Dairy & Breakfast</a></li>
+                <li><a href="">Munchies</a></li>
+                <li><a href="">Cold Drinks & Juices</a></li>
+                <li><a href="">Instant & Frozen Food</a></li>
+                <li><a href="">Tea, Coffee & Health Drinks</a></li>
+                <li><a href="">Bakery & Biscuits</a></li></ul>
+                <li><button class="dropdown" style="position: relative; left: 83vw; top: -18vh; color: rgb(112, 109, 109);font-size: 1rem; border: none;"
+                onclick="show_list()">
+                More
+            </button>
+                <div id="More" style="display: none;"><a href="">Sweet Tooth</a>
+                    <a href="">Atta, Rice & Dal</a>
+                    <a href="">Dry Fruit, Masala & Oil</a>
+                    <a href="">Sauces & Spread</a>
+                    <a href="">Chicken, Meat & Fish</a>
+                    <a href="">Paan Corner</a>
+                    <a href="">Organic & Premium</a>
+                    <a href="">Baby Care</a>
+                    <a href="">Pharma & Wellness</a>
+                    <a href="">Cleaning Essentials</a>
+                    <a href="">Home & Office</a>
+                    <a href="">Ice Creams & Frozen Desserts</a>
+                    <a href="">Personal Care</a>
+                    <a href="">Pet Care</a>
+                    <a href="">Beauty & Cosmetics</a>
+                    <a href="">Books</a>
+                    <a href="">Toys & Games</a>
+                    <a href="">Magazines</a>
+                </div></li>
+    </nav>
+    <div class ="box" style="position: relative; left: -2vw; top: 7vh;">
+        <div class="container-box" style="display: flex; flex-flow: row wrap; background-color: rgb(243, 243, 245);width: 72.5vw;border: 1px solid rgb(238, 236, 236);align-items: center;justify-content: center;">
+            <div class="container" style="width: 11vw; background-color: white;margin: 0.2vw;">
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/1c0db977-31ab-4d8e-abf3-d42e4a4b4632.jpg?ts=1706182142"
+                    alt="">
+                <pre>
+        <b>Amul Gold Full Cream Fresh Milk</b>
+
+        500ml
+
+
+        <b>₹34</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw; background-color: white;margin: .2vw;">
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143"
+                    alt="">
+                <pre>
+        <b>Amul Tazza Toned Fresh Milk</b>
+
+        500ml
+
+
+        <b>₹28</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/ba929c05-aba2-4838-b674-e2072089022b.jpg?ts=1712325614"
+                    alt="">
+                <pre>
+        <b>Mother Dairy Cow Fresh Milk</b>
+
+        500ml
+
+
+        <b>₹29</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                 <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e3f63e12-631f-4193-9160-ea4ddcbd6c5c.jpg?ts=1711189562"
+                    alt="">
+                <pre>
+        <b>Mother Dairy Toned Fresh Milk</b>
+
+        500ml
+
+
+        <b>₹28</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                 <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0be0d49a-4dae-408a-8786-afae1dd05cb1.jpg?ts=1707312314"
+                    alt="">
+                <pre>
+        <b>Amul Salted Butter</b>
+
+        100g
+
+
+        <b>₹60</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0f895474-ac1e-4f52-9587-891e32ab1ba9.jpg?ts=1707312315"
+                    alt="">
+                <pre>
+        <b>Amul Pure Milk Cheese Slices</b>
+
+        200 g
+
+
+        <b>₹141</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/89cb3ef5-0003-4100-bcf4-f97092f30997.jpg?ts=1712325592"
+                    alt="">
+                <pre>
+        <b>Amul Cow Fresh Milk</b>
+
+        500ml
+
+
+        <b>₹29</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            
+            <div class="container" style="width: 11vw; background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/439697a.jpg?ts=1688471557"
+                    alt="">
+                <pre>
+        <b>Amul Blend Diced Cheese</b>
+
+        200 g
+
+
+        <b>₹125</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/63628a.jpg?ts=1690806392"
+                    alt="">
+                <pre>
+        <b>Amul Salted Butter (200 g)</b>
+
+        200 g
+
+
+        <b>₹122</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/76e912ce-375e-4b52-8d8a-27bb86e30776.jpg?ts=1722965199"
+                    alt="">
+                <pre>
+        <b>The Health Factory Zero Maida 
+        Whole Wheat Bread</b>
+
+        250 g
+
+
+        <b>₹53</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/a2ee36fd-a19d-4867-b1dd-7a4b1bfb4dd8.jpg?ts=1708590985"
+                    alt="">
+                <pre>
+        <b>Amul Salted Butter (Chiplets)</b>
+
+        10 units
+
+
+        <b>₹70</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/55504a.jpg?ts=1690814377"
+                    alt="">
+                <pre>
+        <b>Amul Garlic & Herbs Butter</b>
+
+        100 g
+
+
+        <b>₹65</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/73bcc2db-0799-4014-ab75-029bfcdb8375.jpg?ts=1726473603"
+                    alt="">
+                <pre>
+        <b>Amul Masti Curd</b>
+
+        200 g
+
+
+        <b>₹23</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/87a72642-09d3-489f-a914-eb377d3ac820.jpg?ts=1712325556"
+                    alt="">
+                <pre>
+        <b>Amul Gold Milk</b>
+
+        1 l
+
+
+        <b>₹80</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+            <div class="container" style="width: 11vw;background-color: white;margin: 0.2vw;"> 
+                <div class="offer" style="left: -4.5vw; width: 1.2vw;">
+                    <pre>
+                        15% 
+                        off
+                    </pre>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/f6a2e731-2b73-434f-8790-f0878bfddee2.jpg?ts=1723098598"
+                    alt="">
+                <pre>
+        <b>The Nature Fresh White Egg -
+            10 pieces
+        </b>
+
+        10 pieces
+
+
+        <b>₹111</b>
+    </pre>
+                <button>ADD</button>
+
+            </div>
+        </div>
+        <!-- <button class="prev sclick">&#10094;</button>
+        <button class="next sclick">&#10095;</button> -->
+</div></div></div>
+<footer>
+    <div class="footer">
+    <section class="sectionA">
+    <h3>Useful Links</h3>
+    <div class="table">
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="#">About</a></td>
+                    <td><a href="#">Privacy</a></td>
+                    <td><a href="#">Partner</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Career</a></td>
+                    <td><a href="#">Terms</a></td>
+                    <td><a href="#">Franchise</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Blog</a></td>
+                    <td><a href="#">FAQs</a></td>
+                    <td><a href="#">Seller</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Press</a></td>
+                    <td><a href="#">Security</a></td>
+                    <td><a href="#">Warehouse</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Lead</a></td>
+                    <td><a href="#">Mobile</a></td>
+                    <td><a href="#">Deliver</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Value</a></td>
+                    <td><a href="#">Contact</a></td>
+                    <td><a href="#">Resources</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="sectionB">
+    <h3>Categories</h3>
+    <a href="#" style="color: green; text-decoration: none; font-family: 'Roboto', sans-serif; position: relative; left: 7vw; top: -5vh;"; >see All</a>
+    <div class="table">
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="#">Vegetables & Fruit</a></td>
+                    <td><a href="#">Dairy & Breakfast</a></td>
+                    <td><a href="#">Munchies</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Cold Drinks & Juices</a></td>
+                    <td><a href="#">Instant & Frozen Food</a></td>
+                    <td><a href="#">Tea, Coffee & Health Drinks</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Bakery & Buiscuits</a></td>
+                    <td><a href="#">Sweet Tooth</a></td>
+                    <td><a href="#">Atta, Rice & Dal</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Dry Fruits, Masala & Oil</a></td>
+                    <td><a href="#">Sauces & Spread</a></td>
+                    <td><a href="#">Chicken, Meat & Fish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Paan Corner</a></td>
+                    <td><a href="#">Organic & Premium</a></td>
+                    <td><a href="#">Baby Care</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Ice Cream & Frozen Desserts</a></td>
+                    <td><a href="#">Personal Care</a></td>
+                    <td><a href="#">Pet Care</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Beauty & Cosmetics</a></td>
+                    <td><a href="#">Books</a></td>
+                    <td><a href="#">Toys & Games</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Magazines</a></td>
+                    <td><a href="#">Print Store</a></td>
+                    <td><a href="#">Navaratri Special</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</div>
+<section class="sectionC">
+    <p class="copyRight">&copy; Click Commerce Private Limited, 2024-2025</p>
+    <p class="download">Download App 
+    <img class="logos" src="logos/apple.png" alt="">  
+    <img class="logos" src="logos/playstore.png" alt="">  
+    <img class="logos" src="logos/facebook.png" alt="">
+    <img class="logos" src="logos/instagram.png" alt="">
+    <img class="logos" src="logos/linkedin.png" alt="">
+    <img class="logos" src="logos/twitter.png" alt="">
+    </p>
+</section>
+<p class="end">“Blinkit” is owned & managed by "Blink Commerce Private Limited" and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone Consultancy Services Private Limited”</p>
+</footer>
+</body>
+<script src="script.js"></script>
+<script src="Stylesheet/menu.js"></script>
+</html>

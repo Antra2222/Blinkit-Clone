@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* sections */
+.sections{
+    border: 1px solid grey;
+    height: 165vh;
+    display: flex;
+}
+
+.A{
+    flex: 1;
+    border: 1px solid grey;
+}
+
+/* section A1 */
+
+.row {  
+    width: 10%; 
+    padding: 10px; 
+    display: flex;
+    position: relative;
+    top: 50vh;
+    left: 15vw;
+} 
+        
+/* Style the images of gallery */
+.row img { 
+    cursor: zoom-in; 
+    padding: 5px;
+} 
+  
+.row img:hover { 
+    transform: scale(1.1); 
+    transition: 0.5s;
+} 
+        
+* { 
+    box-sizing: border-box; 
+}
+
+
+.productDesc{
+    position: absolute;
+    top: 80vh;
+    left: 12vw;
+font-size: large;
+}
+
+.productDesc h1{
+    font-weight: 450;
+    color: rgb(49, 47, 47);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: .8rem;
+}
+
+.productDesc p{
+    font-family: "Roboto", sans-serif;
+padding-top: 1vh;
+font-size: .9rem;
+color: grey;
+}
+.productDesc pre{
+    font-family: "Roboto", sans-serif;
+padding-top: 1vh;
+font-size: .9rem;
+color: grey;
+}
+.productDesc h4{
+    font-family: "Roboto", sans-serif;
+    padding-top: 1vh;
+    font-size: .9rem;
+    color: rgb(44, 43, 43);
+    font-weight: 500;
+    }
+
+/* section A2 */
+#links{
+    display: flex;
+    flex-direction: row;
+    font-family:  "Roboto", sans-serif;
+    font-size: .78rem;
+    position: relative;
+    top: 5vh;
+    left: 2.5vw;
+}
+#links a{
+    text-decoration: none;
+    color: black;
+}
+
+.rate{
+    margin-right: 2vw;
+}
+.price{
+    position: relative;
+    top: 9vh;
+    left: 2.5vw;
+    border: 1px solid rgb(83, 184, 83);
+    border-radius: 8px;
+    width: 4vw;
+    height: 6vh;
+    cursor: pointer;
+}
+
+.price pre{
+    font-family: "Roboto", sans-serif;
+}
+
+#afterprice{
+    position: relative;
+    top: 10vh;
+    left: 2.5vw;
+}
+
+#afterprice p{
+    font-family: "Roboto", sans-serif;
+}
+
+.benefits{
+    display: flex;
+}
+
+.benefits div{
+    position: relative;
+    left: 1vw;
+    top: 2vh;
+}
+
+
+ 
