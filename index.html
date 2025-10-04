@@ -1,0 +1,2546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="../index.html">ClickIt</a></div>
+            <div class="sicon">
+                <input id="search" type="text" placeholder="What are you looking for?" oninput="search_grocery()" onkeydown="handleEnter(event)">
+                <img src="../search.png" alt="Search Icon">
+                <ul id="searchList" style="display: none;">
+                    <li class="dairyProduct"><a href="Dairy.html">Amul Gold Full Cream Milk</a></li>
+                    <li class="dairyProduct"><a href="Paan/Paan.html">Amul Tazza Toned Fresh Milk</a></li>
+                    <li class="dairyProduct"><a href="Dairy.html">Mother Dairy Cow Milk</a></li>
+                    <li class="dairyProduct"><a href="Dairy/MotherDairyCowMilk.html">Mother Dairy Toned Fresh Milk</a></li>
+                    <li class="dairyProduct"><a href="Dairy/MotherDairyCowMilk.html"></a>Amul Salted Butter</li>
+                    <li class="dairyProduct">Amul Pure Milk Cheese Slice</li>
+                    <li class="dairyProduct">Amul Cow Fresh Milk</li>
+                    <li class="dairyProduct">Amul Blend Diced Cheese</li>
+                    <li class="dairyProduct">Zero Maida Whole Wheat Bread</li>
+                    <li class="dairyProduct">Nature Fresh Egg</li>
+                    <li class="dairyProduct">Humpty Farm A2 Cow Fresh Milk</li>
+                    <li class="dairyProduct">Amul Curd</li>
+                    <li class="dairyProduct">Amul Masti Curd</li>
+                    <li class="dairyProduct"><a href="Dairy.html">Amul Milk</a></li>
+
+                </ul>
+            </div>
+            <!-- <div class="login"><a href="/Login/login.php">Login</a></div> -->
+            <button class="btn">
+                <a href="../cart.html">
+                <img src="../cart.png" alt="cart image">
+                <div id="itemAndPrice"></div></a>
+              </button>
+        </div>
+    </nav>
+
+    <div class="section1">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg"
+            alt="">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+            alt="">
+        <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-03/babycare-WEB.jpg"
+            alt="">
+    </div>
+
+    <div class="section2">
+        <p><a href="Paan/Paan.html">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                alt="">
+            </a>
+            <a href="Dairy.html">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png"
+                alt="">
+            </a>
+            <a href="Fruits&Veg/Fruits&Veg.html">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png"
+                alt="">
+            </a>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png"
+                alt=""><br>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-11.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-12.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-13.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-14.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-15.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-16.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-17.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-18.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-19.png"
+                alt="">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-20.png"
+                alt="">
+        </p>
+    </div>
+    <div class="section3">
+        <h2>Dairy, Bread & Eggs</h2>
+        <a Class="seeAll" href="../Dairy.html">See All</a>
+        <div class ="box">
+        <div class="container-box">
+            <div class="container">
+                <a href="../Dairy/fullCreamFreshMilk.html" style="text-decoration: none; color: black;">
+                <div class="offer">
+                    <p>
+                        15%
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/1c0db977-31ab-4d8e-abf3-d42e4a4b4632.jpg?ts=1706182142"
+                    alt="">
+                <pre>
+        <b>Amul Gold Full Cream 
+        Fresh Milk</b>
+        500ml
+
+        <b>₹34</b>
+    </pre></a>
+                <button onclick="addToCart('Amul Gold Full Cream Fresh Milk', 34)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="offer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143"
+                    alt="">
+                <pre>
+        <b>Amul Tazza Fresh Milk
+           </b>
+        500ml
+
+        <b>₹28</b>
+    </pre></a>
+                <button onclick="addToCart('Amul Tazza Fresh Milk', 28)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/ba929c05-aba2-4838-b674-e2072089022b.jpg?ts=1712325614"
+                    alt="">
+                <pre>
+        <b>Mother Dairy Cow
+        Fresh Milk</b>
+        500ml
+
+        <b>₹29</b>
+    </pre></a>
+                <button onclick="addToCart('Mother Dairy Cow Fresh Milk', 29)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e3f63e12-631f-4193-9160-ea4ddcbd6c5c.jpg?ts=1711189562"
+                    alt="">
+                <pre>
+        <b>Mother Dairy Toned
+        Fresh Milk</b>
+        500ml
+
+        <b>₹28</b>
+    </pre></a>
+                <button onclick="addToCart('Mother Dairy Toned Fresh Milk', 28)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0be0d49a-4dae-408a-8786-afae1dd05cb1.jpg?ts=1707312314"
+                    alt="">
+                <pre>
+        <b>Amul Salted Butter
+        </b>
+        100 g
+
+        <b>₹60</b>
+    </pre></a>
+    <button onclick="addToCart('Amul Salted Butter', 60)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0f895474-ac1e-4f52-9587-891e32ab1ba9.jpg?ts=1707312315"
+                    alt="">
+                <pre>
+        <b>Amul Pure Milk Cheese Slice
+        </b>
+        200 g
+
+        <b>₹141</b>
+    </pre></a>
+    <button onclick="addToCart('Amul Pure Milk Cheese Slice', 141)">ADD</button>
+
+            </div></div>
+            <div class="container-box">
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/89cb3ef5-0003-4100-bcf4-f97092f30997.jpg?ts=1712325592"
+                    alt="">
+                <pre>
+        <b>Amul Cow Fresh Milk 
+        </b>
+        500ml
+
+        <b>₹29</b>
+    </pre></a>
+    <button onclick="addToCart('Amul Cow Fresh Milk', 29)">ADD</button>
+
+            </div>
+            
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/439697a.jpg?ts=1688471557"
+                    alt="">
+                <pre>
+        <b>Amul Blend Diced Cheese
+        </b>
+        200g
+
+        <b>₹125</b>
+    </pre></a>
+    <button onclick="addToCart('Amul Blend Diced Cheese', 125)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/63628a.jpg?ts=1690806392"
+                    alt="">
+                <pre>
+        <b>Amul Salted Butter (200g)
+        </b>
+        200 g
+
+        <b>₹122</b>
+    </pre></a>
+    <button onclick="addToCart('Amul Salted Butter (200g)', 122)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/76e912ce-375e-4b52-8d8a-27bb86e30776.jpg?ts=1722965199"
+                    alt="">
+                <pre>
+        <b>The Healthy Factory Zero
+        Maida Whole Wheat Bread</b>
+        250 g
+
+        <b>₹53</b>
+    </pre></a>
+    <button onclick="addToCart('Maida Whole Wheat Bread', 53)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/a2ee36fd-a19d-4867-b1dd-7a4b1bfb4dd8.jpg?ts=1708590985"
+                    alt="">
+                <pre>
+        <b>Amul Salted Butter 
+        (Chiplets)
+        </b>10 units
+
+        <b>₹70</b>
+    </pre></a>
+    <button onclick="addToCart('Amul Salted Butter (Chiplets)', 70)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/55504a.jpg?ts=1690814377"
+                    alt="">
+                <pre>
+        <b>Amul Garlic & Herbs Butter 
+        </b>
+        100 g
+
+        <b>₹65</b>
+    </pre></a>
+    <button onclick="addToCart('Amul Garlic & Herbs Butter', 65)">ADD</button>
+
+            </div></div>
+            <div class="container-box">
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/cdaf71cc-bc13-4b35-b0c6-e5638aaf0ca4.jpg?ts=1711101633"
+                    alt="">
+                <pre>
+        <b>Humpy Farms A2 Cow Fresh
+        Milk</b>
+        500ml
+
+        <b>₹49</b>
+    </pre></a>
+    <button onclick="addToCart('Humpty Farms A2 Cow Fresh Milk', 49)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0e07b9e3-8968-4058-932c-e877df190918.jpg?ts=1726474555"
+                    alt="">
+                <pre>
+        <b>Amul curd                   
+        </b>
+        850 g
+
+        <b>₹50</b>
+    </pre></a>
+    <button onclick="addToCart('Amul curd', 50)">ADD</button>
+
+            </div>
+            <div class="container">
+                <a href="../Dairy/MotherDairyCowMilk.html" style="text-decoration: none; color: black;">
+                <div class="nooffer">
+                    <p>
+                        15% 
+                        off
+                    </p>
+                </div>
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/73bcc2db-0799-4014-ab75-029bfcdb8375.jpg?ts=1726473603"
+                    alt="">
+                <pre>
+        <b>Amul Masti Curd               
+        </b>
+        200 g
+
+        <b>₹23</b>
+    </pre></a>
+    <button onclick="addToCart('Amul Masti Curd', 23)">ADD</button>
+
+            </div>
+        </div>
+        <button class="prev sclick">&#10094;</button>
+        <button class="next sclick">&#10095;</button>
+    </div>
+</div></div>
+
+<div class="section4">
+    <h2>Rolling paper & tobacco</h2>
+    <a Class="seeAll" href="/paper.html">See All</a>
+    <div class ="box1">
+    <div class="container-box1">
+        <div class="container">
+            <div class="nooffer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/478728a.jpg?ts=1690814280"
+                alt="">
+            <pre>
+    <b>  Ultimate Rolling Paper
+      with Filter Tips &...</b>
+
+      1 pack (32 pieces)
+
+
+    <b>  ₹90</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/496994a.jpg?ts=1698309251"
+                alt="">
+            <pre>
+    <b>  Brown Rolling Paper +
+      Roach with Crushing...</b>
+
+      1 pack
+
+
+    <b>  ₹222</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/477465a.jpg?ts=1690814481"
+                alt="">
+            <pre>
+    <b>  Brown Classic Slim
+      Rolling Paper (King...</b>
+
+      1 pack (32 pieces)
+
+
+    <b>  ₹112</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480940a.jpg?ts=1701679974"
+                alt="">
+            <pre>
+    <b>  White Rolling Paper
+      Tips - Elements</b>
+
+      1 pack (50 pieces)
+
+
+    <b>  ₹50</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/506711a.jpg?ts=1686566489"
+                alt="">
+            <pre>
+    <b>  Perfect Rolling Paper
+      (Pink) - Bongchie</b>
+
+      3 pack
+
+
+    <b>  ₹45</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480951a.jpg?ts=1690814339"
+                alt="">
+            <pre>
+    <b>  White Rolling Paper
+      Cones - Stash Pro</b>
+
+      6 pieces
+
+
+    <b>  ₹100</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box1">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/508041a.jpg"
+                alt="">
+            <pre>
+    <b>  White Rolling Paper
+      (King Size Slim) - Stas...</b>
+
+      32 Sheets
+
+
+    <b>  ₹50</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/480944a.jpg?ts=1690815233"
+                alt="">
+            <pre>
+    <b>  Black Organic Hemp
+      Slim Rolling Paper (Kin...</b>
+
+      1 pack (32 pieces)
+
+
+    <b>  ₹150</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/537048a.jpg?ts=1699862659"
+                alt="">
+            <pre>
+    <b>  Bio-Degradable Crusher by
+      Stash Pro</b>
+
+      <!-- 500ml -->
+
+
+    <b>  ₹300</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/2dc4cab7-1bf2-405a-bc4c-7079de736d0e.jpg"
+                alt="">
+            <pre>
+    <b>      High Density Smoking Filters -
+          Stash Pro</b>
+
+          1 pack (120 pieces)
+
+
+    <b>      ₹149</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/535600a.jpg?ts=1698309253"
+                alt="">
+            <pre>
+    <b>    Ripper Tipper Brown Rolling
+        Paper (Small) by Stash Pro</b>
+
+        1 pack (40 + 40 pieces)
+
+    <b>    ₹120</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/537062a.jpg"
+                alt="">
+            <pre>
+    <b>  Small Metal Rolling Tray 
+      (Assorted) by Stash Pro</b>
+
+      <!-- 500ml -->
+
+
+    <b>  ₹350</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box1">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/540989a.jpg"
+                alt="">
+            <pre>
+    <b>Herb Mixing Rolling Tray by
+    Stash Pro</b>
+
+    <!-- 500ml -->
+
+
+    <b>₹300</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/496998a.jpg?ts=1690814342"
+                alt="">
+            <pre>
+    <b>          White Rolling Paper - Stash Pro 
+    </b>
+
+              4 * 32 sheets
+
+
+    <b>          ₹200</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <!-- <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/cdaf71cc-bc13-4b35-b0c6-e5638aaf0ca4.jpg?ts=1711101633"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div> -->
+    </div>
+    <button class="prev1 sclick">&#10094;</button>
+    <button class="next1 sclick">&#10095;</button>
+</div>
+</div></div>
+<div class="section5">
+    <h2>Snacks & Munchies</h2>
+    <a Class="seeAll" href="/Dairy.html">See All</a>
+    <div class ="box2">
+    <div class="container-box2">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/ef3c74a4-c809-4799-919d-27f75fba37eb.jpg?ts=1723100801"
+                alt="">
+            <pre>
+    <b>  Cheetos Cheese Flavoured
+      Puffs</b>
+
+      24.8 g
+
+
+    <b>  ₹161</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/f3942a5e-8152-4f6b-8e23-af97aaae5e08.jpg?ts=1723101002"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b9c575a0-059a-424b-90c6-b38201c1f69f.jpg?ts=1723098476"
+                alt="">
+            <pre>
+    <b>Nongshim Shrimp
+    Flavoured Crackers Chips</b>
+
+    75 g
+
+
+    <b>₹129</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b3ee7724-3b6c-475e-aa50-1714fe9199be.jpg?ts=1723100802"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6807f54d-f711-49ca-9635-514ac9b72d7f.jpg?ts=1724850859"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6265c933-0619-4ce1-ae4b-6c9336902295.jpg?ts=1723098571"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box2">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/033d8394-849a-4a07-a712-79a50df9bd51.jpg?ts=1723098570"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/79f7319a-f048-48db-ab5a-00a6d2911ea3.jpg?ts=1723098575"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/519581a.jpg?ts=1690829026"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/519579a.jpg?ts=1690828992"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/bc76ce9d-9d2c-42eb-a1d5-6464618fe978.jpg?ts=1723100846"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/c4486d68-0ed2-43f0-9214-851063495eb5.jpg?ts=1723098569"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box2">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/4bf93c8a-56bc-487e-9660-cfb4082ccedb.jpg?ts=1723098573"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/c7221d26-16ce-4b85-802a-b4a5aaabae13.jpg"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/519582a.jpg?ts=1690830565"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+    </div>
+    <button class="prev2 sclick">&#10094;</button>
+    <button class="next2 sclick">&#10095;</button>
+</div>
+</div></div>
+<div class="section6">
+    <h2>Hookah</h2>
+    <a Class="seeAll" href="/paper.html">See All</a>
+    <div class ="box3">
+    <div class="container-box3">
+        <div class="container">
+            <div class="nooffer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/496995a.jpg?ts=1690814532"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/535601a.jpg?ts=1698309253"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/535602a.jpg?ts=1698309253"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/540986a.jpg"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/540990a.jpg"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/532051a.jpg"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box3">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/d38b7405-5008-4c4c-b1b9-2f4943666bdb.jpg?ts=1705509561"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        
+        <!-- <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/439697a.jpg?ts=1688471557"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div> -->
+        <!-- <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/63628a.jpg?ts=1690806392"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div> -->
+        <!-- <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/76e912ce-375e-4b52-8d8a-27bb86e30776.jpg?ts=1722965199"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div> -->
+        <!-- <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/a2ee36fd-a19d-4867-b1dd-7a4b1bfb4dd8.jpg?ts=1708590985"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div> -->
+        <!-- <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/55504a.jpg?ts=1690814377"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div -->
+    </div>
+        <!-- <div class="container-box3">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/cdaf71cc-bc13-4b35-b0c6-e5638aaf0ca4.jpg?ts=1711101633"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div> -->
+        <!-- <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/cdaf71cc-bc13-4b35-b0c6-e5638aaf0ca4.jpg?ts=1711101633"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div> -->
+        <!-- <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/cdaf71cc-bc13-4b35-b0c6-e5638aaf0ca4.jpg?ts=1711101633"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+    </div> -->
+    <button class="prev3 sclick">&#10094;</button>
+    <button class="next3 sclick">&#10095;</button>
+</div>
+</div>
+</div>
+<div class="section7">
+    <h2>Mouth Fresheners</h2>
+    <a Class="seeAll" href="/paper.html">See All</a>
+    <div class ="box4">
+    <div class="container-box4">
+        <div class="container">
+            <div class="nooffer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/363209a.jpg?ts=1690815071"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/d7f338a8-8de6-452e-bb0f-2bd061a65fef.jpg?ts=1706602565"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/163972a.jpg?ts=1690813224"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/122335a.jpg?ts=1686225264"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/ddaa1d84-f4ba-41cb-9bf1-e1f840050c81.jpg?ts=1707557498"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/110259a.jpg?ts=1688469108"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box4">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/495586a.jpg?ts=1690813422"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/363211a.jpg?ts=1690813897"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/363212a.jpg?ts=1690814160"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/d02799db-82c5-47f8-acd3-5c4844f3aa29.jpg?ts=1723200654"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/102583a.jpg?ts=1687265030"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/206540a.jpg?ts=1687437714"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box4">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/498984a.jpg?ts=1686566080"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/a35c4402-2583-4f95-8c0f-8364b83974b0.jpg?ts=1708592508"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/492502a.jpg?ts=1690814287"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+    </div>
+    <button class="prev4 sclick">&#10094;</button>
+    <button class="next4 sclick">&#10095;</button>
+</div>
+</div></div>
+<div class="section8">
+    <h2>Cold Drinks & Juices</h2>
+    <a Class="seeAll" href="/paper.html">See All</a>
+    <div class ="box5">
+    <div class="container-box5">
+        <div class="container">
+            <div class="nooffer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e723544a-a090-418a-927c-ff1c9aece278.jpg?ts=1712986639"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6b98633c-7c6a-4708-a372-e2b49da568ab.jpg?ts=1707312322"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/14838ab8-8d4c-40e8-9551-418d17d3f6a9.jpg?ts=1715152426"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e69c587d-802a-40eb-a40b-a6bc9623526d.jpg?ts=1707312325"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/10557a.jpg?ts=1690813220"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b330c04e-0e5f-4733-a43f-9351772763d8.jpg?ts=1721201147"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box5">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0f87f19e-66da-48cd-8c75-343abf732948.jpg?ts=1707312325"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/482620a.jpg?ts=1690813234"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/a47fb0fa-afa5-46c8-b432-87cb5a6da231.jpg?ts=1726473715"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/15288a.jpg?ts=1698840601"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/521828a.jpg?ts=1683198883"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/10559a.jpg?ts=1688463546"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box5">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/600dd9ff-659c-4817-87e7-eec1dea72c63.jpg?ts=1706182144"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/19507a.jpg?ts=1689328439"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/10562a.jpg?ts=1690812772"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+    </div>
+    <button class="prev5 sclick">&#10094;</button>
+    <button class="next5 sclick">&#10095;</button>
+</div>
+</div></div>
+<div class="section9">
+    <h2>Candies & Gums</h2>
+    <a Class="seeAll" href="/paper.html">See All</a>
+    <div class ="box6">
+    <div class="container-box6">
+        <div class="container">
+            <div class="nooffer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/b35d3e0c-957e-4575-a85f-203591f91fe5.jpg?ts=1729074799"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/110755a.jpg?ts=1697793137"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/6aa6df45-3617-42dd-a025-b27126beb727.jpg?ts=1729074805"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/2435a8ec-301a-4a1f-a89e-6c031960082e.jpg?ts=1729074793"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/425350a.jpg?ts=1697793145"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/3634e47c-cddd-4740-a2ca-593fd9514465.jpg?ts=1729445286"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box6">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/252412a.jpg?ts=1692622240"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/440072a.jpg?ts=1704911343"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/440074a.jpg?ts=1704911343"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/aa4c477e-08d8-479d-be21-76e061e13c0d.jpg?ts=1718169096"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/440071a.jpg?ts=1704911342"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/184fe330-600f-450b-a39b-8cf023c72371.jpg?ts=1714674837"
+                alt="">
+            <pre>
+    <b>  Amul Gold Full Cream 
+      Fresh Milk</b>
+
+      500ml
+
+
+    <b>  ₹34</b>
+</pre>
+</pre>
+            <button>ADD</button>
+
+        </div></div>
+        <div class="container-box6">
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/011c5a97-354e-4ef5-8852-bcb6bed82a2b.jpg?ts=1720016768"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/495586a.jpg?ts=1690813422"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+        <div class="container">
+            <div class="offer">
+                <pre>
+                        15% 
+                        off
+                </pre>
+            </div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/6116440d-2eb4-47c9-b3c9-5e47c46e556f.jpg?ts=1729445380"
+                alt="">
+            <pre>
+    <b>Amul Gold Full Cream 
+    Fresh Milk</b>
+
+    500ml
+
+
+    <b>₹34</b>
+</pre>
+            <button>ADD</button>
+
+        </div>
+    </div>
+    <button class="prev6 sclick">&#10094;</button>
+    <button class="next6 sclick">&#10095;</button>
+</div>
+</div></div>
+<footer>
+    <div class="footer">
+    <section class="sectionA">
+    <h3>Useful Links</h3>
+    <div class="table">
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="#">About</a></td>
+                    <td><a href="#">Privacy</a></td>
+                    <td><a href="#">Partner</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Career</a></td>
+                    <td><a href="#">Terms</a></td>
+                    <td><a href="#">Franchise</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Blog</a></td>
+                    <td><a href="#">FAQs</a></td>
+                    <td><a href="#">Seller</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Press</a></td>
+                    <td><a href="#">Security</a></td>
+                    <td><a href="#">Warehouse</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Lead</a></td>
+                    <td><a href="#">Mobile</a></td>
+                    <td><a href="#">Deliver</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Value</a></td>
+                    <td><a href="#">Contact</a></td>
+                    <td><a href="#">Resources</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="sectionB">
+    <h3>Categories</h3>
+    <a href="#" style="color: green; text-decoration: none; font-family: 'Roboto', sans-serif; position: relative; left: 7vw; top: -5vh;"; >see All</a>
+    <div class="table">
+        <table>
+            <tbody>
+                <tr>
+                    <td><a href="#">Vegetables & Fruit</a></td>
+                    <td><a href="#">Dairy & Breakfast</a></td>
+                    <td><a href="#">Munchies</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Cold Drinks & Juices</a></td>
+                    <td><a href="#">Instant & Frozen Food</a></td>
+                    <td><a href="#">Tea, Coffee & Health Drinks</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Bakery & Buiscuits</a></td>
+                    <td><a href="#">Sweet Tooth</a></td>
+                    <td><a href="#">Atta, Rice & Dal</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Dry Fruits, Masala & Oil</a></td>
+                    <td><a href="#">Sauces & Spread</a></td>
+                    <td><a href="#">Chicken, Meat & Fish</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Paan Corner</a></td>
+                    <td><a href="#">Organic & Premium</a></td>
+                    <td><a href="#">Baby Care</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Ice Cream & Frozen Desserts</a></td>
+                    <td><a href="#">Personal Care</a></td>
+                    <td><a href="#">Pet Care</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Beauty & Cosmetics</a></td>
+                    <td><a href="#">Books</a></td>
+                    <td><a href="#">Toys & Games</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">Magazines</a></td>
+                    <td><a href="#">Print Store</a></td>
+                    <td><a href="#">Navaratri Special</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+</div>
+<section class="sectionC">
+    <p class="copyRight">&copy; Click Commerce Private Limited, 2024-2025</p>
+    <p class="download">Download App 
+    <img class="logos" src="../logos/apple.png" alt="">  
+    <img class="logos" src="../logos/playstore.png" alt="">  
+    <img class="logos" src="../logos/facebook.png" alt="">
+    <img class="logos" src="../logos/instagram.png" alt="">
+    <img class="logos" src="../logos/linkedin.png" alt="">
+    <img class="logos" src="../logos/twitter.png" alt="">
+    </p>
+</section>
+<p class="end">“Blinkit” is owned & managed by "Blink Commerce Private Limited" and is not related, linked or interconnected in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by “Redstone Consultancy Services Private Limited”</p>
+</footer>
+</body>
+<script src="../script.js"></script>
+<script src="../cart.js"></script>
+<script src="../Stylesheet/menu.js"></script>
+
+</html>
